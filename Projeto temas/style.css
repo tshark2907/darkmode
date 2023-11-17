@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+header{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: white;
+}
+footer{
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 0;
+}
+footer span{
+    text-align: center;
+}
+body{
+    background-color: lightgrey;
+}
+.logo{
+    width: 200px;
+    height: 200px;
+}
+.profile_pic{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+}
+form{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.profile_area{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+main{
+    background-color: white;
+    width: 80%;
+    margin: 50px auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 10px;
+}
+.section_1,.section_2{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    gap:10px;
+}
+.content_1,.content_2,.content_3,.content_4{
+    width: 50%;
+    height: 300px;
+    border: 1px solid black;
+}
+.content_2,.content_4{
+    margin-top: 40px;
+}
+.search{
+    padding: 10px;
+}
+.search_label{
+    cursor: pointer;
+    background-color: darkblue;
+    color: white;
+    padding: 5px;
+}
+.sandwich{
+    color: darkblue;
+    cursor: pointer;
+}
+aside{
+    position: absolute;
+    width: 200px;
+    height: 102vh;
+    padding: 20px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    right: 0;
+}
+aside ul{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    list-style: none;
+}
+aside ul li{
+    border: 1px solid purple;
+    padding: 10px;
+    cursor: pointer;
+}
+aside ul li a{
+    color: black;
+}
+a{
+    text-decoration: none;
+}
+.logout{
+    width: 100%;
+    bottom: 0;
+    background-color: purple;
+    color: white;
+}
+.toggleMode{
+    cursor: pointer;
+    position: relative;
+    bottom: 10px;
+    left: 10px;
+    height: 50px;
+    padding: 5px;
+    width: 100px;
+    border-radius: 50px 50px 50px 50px;
+    display: flex;
+    flex-direction: row;
+    border: 1px solid rgb(0, 0, 0);
+    background-color: lightblue;
+    gap: 8px;
+    align-items: center;
+}
+
+.sun,.moon{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    z-index: 1;
+}
+.sun{
+    background: linear-gradient(90deg, rgba(152,223,255,1) 0%, rgba(0,104,212,1) 100%);
+       
+}
+.moon{
+    background: linear-gradient(90deg, rgba(3,127,182,1) 0%, rgba(0,3,18,1) 100%);    
+}
+@keyframes rollIn{
+100%{
+    transform:  translateX(45px);
+    opacity: 0;
+}}
+@keyframes rollOut{
+100%{
+    transform: translateX(-45px);
+    opacity:0;
+}}
+@keyframes fadeIn{
+    0%{opacity:0;}
+    100%{opacity: 1;}
+}
+.hidden{
+    opacity: 0;
+}
